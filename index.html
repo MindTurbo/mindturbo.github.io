@@ -5,9 +5,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <title>明仑 MindTurbo</title>
-  <% if (env === "production") { %>
-      <link rel="stylesheet" href="/home/index.css?v=20170414">
-  <% } %>
+  <link rel="stylesheet" href="/home/index.css?v=20170414">
 </head>
 <body>
   <div class="swiper-container main-wrapper"> 
@@ -121,8 +119,6 @@
       </div>    
   </div>
   <script src="/home/bundle.js?v=20170414"></script>
-  <% if (env !== "production" && reload === true) { %>
-    <script src="/reload/reload.js?v=20170414"></script>
-  <% } %>
+  <script src="/reload/reload.js?v=20170414"></script>
 </body>
 </html>
