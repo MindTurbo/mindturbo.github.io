@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>明仑 MindTurbo</title>
+  <% if (env === "production") { %>
+      <link rel="stylesheet" href="/home/index.css?v=20170414">
+  <% } %>
+</head>
+<body>
+  <div class="swiper-container main-wrapper"> 
+    <nav class="nav-bar">
+      <div class="container">
+        <a class="logo" href="/"></a>
+        <ul class="menu" id="menu">
+          <div id="navSelected"></div>
+          <li class="active"><a data-hash="home" href="#">首页</a></li>
+          <li><a data-hash="brand" href="#">品牌</a></li>
+          <li><a data-hash="join-us" href="">加入我们</a></li>
+        </ul>    
+      </div>
+    </nav>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide home" id="home">
+        <div class="container">
+          <div class="logo"></div>
+          <div class="content wide">
+            <p>我们热爱创作, 是生活的未来派.</p>
+            <p>在明仑, 我们用科技和艺术去更自由地创造美好的生活消费品.</p>
+          </div>
+          <div class="content narrow nihao">
+            <span>我们热爱创作,</span>
+            <span>是生活的未来派.</span>
+            <span>在明仑, </span>
+            <span>我们用科技和艺术</span>
+            <span>去更自由地创造</span>
+            <span>美好的生活消费品.</span>
+          </div>          
+        </div>
+      </div>
+      <div class="swiper-slide brand" id="brand">
+        <div class="container">
+          <article class="article article-1">
+            <a class="logo" href="https://arckr.com" target="_blank"></a>
+            <div class="info">
+              <span class="name">氩氪号</span>&nbsp;&nbsp;<span class="desc">AR百货</span>
+            </div>
+            <div class="content">
+              AR技术梦幻而有趣, 她离我们的日常可以很近. 在 氩氪号, 人们用AR为生活凡物绘上翅膀, 在时空的方寸之间开始心的远航, 无界无疆.
+            </div>
+          </article>
+          <article class="article article-2">
+            <a class="logo" href="https://brands.arckr.com/timesalt/" target="_blank"></a>
+            <div class="info">
+              <span class="name">时盐</span>&nbsp;&nbsp;<span class="desc">生活有趣用品</span>
+            </div>
+            <div class="content">
+              平淡的生活无法把我们击倒, 生命就该浪费在美好而有趣的事物上. 时盐 是生活杂货品牌, 用AR连接生活与游戏, 化凡为趣, 调味时光.
+            </div>
+          </article>          
+        </div>
+      </div>
+      <div class="swiper-slide join-us" id="joinUs">
+        <div class="wrapper">
+          <div class="container">
+            <h2 class="title">Join Us, Carve Out</h2>
+            <div class="text clearfix">
+              <p>若你痴迷于创造未有、开疆未履,</p>
+              <p>请加入我们, 共征蓝途</p>
+              <a class="btn fl" href="mailto:join@mindturbo.com">电邮</a>
+              <a class="btn fr" href="https://www.lagou.com/gongsi/90292.html" target="_blank">开放职位</a>
+            </div>
+            <div class="concluding-remarks">
+              <p>在明仑——</p>
+              <p>我们关切你能做擅长或喜欢的事情, 成就你为发光体</p>
+              <p>我们欣赏你卷袖浅尝, 亦或独当一面、遒劲一身本领</p>
+              <p>我们以产品承载你的创造, 帮助你去传递更大影响力</p>
+            </div>              
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+        <div class="mask">
+          <div class="wrapper wide">
+            <div class="company-info">
+                <span class="fl ml50">Copyright © 2017 MindTurbo Inc. 明仑智能 版权所有</span>
+                <a class="fr mr50" href="http://www.miibeian.gov.cn" target="_blank">    
+              沪ICP备15054195号-1</a>        
+            </div>               
+            <div class="container">           
+              <div class="contact">
+                <span class="us">联系我们:</span>
+                <div class="contact-info">
+                  <span>Tel: 021-62717336</span>
+                  <span>/</span>
+                  <span class="email">Email: 
+                  <a href="mailto:hi@mindturbo.com" class="important">hi@mindturbo.com</a></span>
+                </div>
+              </div>                     
+            </div>
+               
+          </div>
+          <div class="wrapper narrow">
+            <div class="contact">
+              <span class="us">联系我们:</span>
+              <div class="info">
+                <span class="tel">Tel: 021-62717336</span>
+                <span class="email">Email: 
+                <a href="mailto:hi@mindturbo.com" class="important">hi@mindturbo.com</a></span>                
+              </div>
+              
+              <div class="copyright
+              ">Copyright © 2017 MindTurbo Inc. 明仑智能 版权所有</div>
+              <a class="number" href="http://www.miibeian.gov.cn" target="_blank">沪ICP备15054195号-1</a>            
+            </div>             
+          </div>
+        </div>
+      </div>    
+  </div>
+  <script src="/home/bundle.js?v=20170414"></script>
+  <% if (env !== "production" && reload === true) { %>
+    <script src="/reload/reload.js?v=20170414"></script>
+  <% } %>
+</body>
+</html>
